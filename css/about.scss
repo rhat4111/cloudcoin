@@ -1,0 +1,550 @@
+@import './layout.scss';
+
+body {
+  background: #040404;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    background: #040404;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    .banner {
+      margin-top: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 278px;
+      padding: 0 20px;
+
+      .logo {
+        max-width: 100%;
+      }
+
+      .description {
+        font: {
+          family: Barlow;
+          size: 20px;
+        }
+        max-width: 912px;
+        line-height: 32px;
+        color: #FFFFFF76;
+        text-align: center;
+      }
+    }
+
+    .section-1 {
+      width: 100%;
+      max-width: 1458px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 266px;
+      padding: 0 20px;
+
+      .left {
+        .title {
+          font: {
+            family: Syne;
+            size: 52px;
+          }
+          line-height: 62px;
+          color: #FFF;
+          margin-bottom: 38px;
+        }
+
+        .description {
+          font: {
+            family: Barlow;
+            size: 16px;
+          }
+          line-height: 26px;
+          color: #FFFFFF76;
+        }
+      }
+    }
+
+    .section-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 53px;
+
+      .title {
+        font: {
+          family: Syne;
+          size: 29px;
+        }
+        line-height: 35px;
+        color: #FFF;
+        margin-bottom: 13px;
+        text-align: center;
+      }
+
+      .description {
+        font: {
+          family: Barlow;
+          size: 18px;
+        }
+        text-align: center;
+        color: #FFFFFF76;
+        margin-bottom: 52.6px;
+      }
+
+      .items {
+        margin-bottom: 30px;
+
+        .item {
+          width: 798px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 30px;
+          
+          .left {
+            width: 372px;
+          }
+
+          .right {
+            width: 394px;
+            border: 1px solid #FFFFFF16;
+            border-radius: 9px;
+
+            & > div {
+              display: flex;
+              justify-content: space-between;
+              padding: 0 25px;
+              align-items: center;
+
+              span {
+                font: {
+                  family: Barlow;
+                  size: 18px;
+                  weight: 600;
+                }
+                color: #FFFFFF60;
+              }
+
+            }
+            .header { 
+              position: relative!important;
+              height: 66.5px;
+              z-index: 300;
+              border-bottom: 1px solid #393C71;
+              span:last-child {
+                color: #FFF;
+              }
+            }
+
+            .body {
+              height: 66.5px;
+              span:last-child {
+                color: #2B8CFF;
+              }
+            }
+          }
+        }
+      }
+
+      .total {
+        p {
+          text-align: center;
+        }
+
+        .title {
+          font: {
+            family: Barlow;
+            size: 21px;
+            weight: 600;
+          }
+          line-height: 21px;
+        }
+
+        .point {
+          font: {
+            family: Barlow;
+            size: 40px;
+            weight: 600;
+          }
+          line-height: 40px;
+          color: #2B8CFF;
+        }
+      }
+    }
+
+    .section-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+
+      .timeline {
+        margin-bottom: 62px;
+
+        img {
+          width: 100%;
+          max-width: 1525px;
+        }
+      }
+
+      .description {
+        font: {
+          family: Barlow;
+          size: 16px;
+        }
+        line-height: 26px;
+        color: #FFFFFF76;
+        text-align: center;
+        max-width: 836px;
+      }
+      margin-bottom: 288px;
+    }
+
+    .section-4 {
+      padding: 0 20px;
+      padding-bottom: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        font: {
+          family: Syne;
+          size: 29px;
+        }
+        line-height: 35px;
+        color: #FFF;
+        margin-bottom: 13px;
+        overflow-wrap: anywhere;
+        text-align: center;
+      }
+
+      .description {
+        text-align: center;
+        margin-bottom: 84px;
+        font: {
+          family: Barlow;
+          size: 18px;
+        }
+        line-height: 27px;
+        color: #FFFFFF76;
+      }
+
+      .users {
+        .title {
+          font: {
+            family: Barlow;
+            size: 22px;
+            weight: 600;
+          }
+          color: #FFF;
+          margin-bottom: 28px;
+          text-align: left;
+        }
+
+        .content {
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 1280px;
+          width: 100%;
+          justify-content: center;
+          margin: 0 -14.5px;
+          box-sizing: content-box;
+
+          .user {
+            width: 282px;
+            margin: 0 14.5px;
+            position: relative;
+            margin-bottom: 31px;
+
+            .gradient {
+              position: absolute;
+              width: 100%;
+              height: 50%;
+              bottom: 0;
+              left: 0;
+              background: linear-gradient(#00000000, #000000);
+            }
+
+            .name {
+              position: absolute;
+              bottom: 32px;
+              left: 39px;
+              font: {
+                family: Barlow;
+                size: 17px;
+                weight: 600
+              }
+              color: #FFF;
+            }
+          }
+        }
+      }
+    }
+
+    .section-5 {
+      width: 100%;
+      background: #0E0E0E;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 125px 20px 160px;
+      
+      .title {
+        font: {
+          family: Syne;
+          size: 29px;
+        }
+        color: #FFF;
+        margin-bottom: 41px;
+      }
+
+      .logo {
+        margin-bottom: 46px;
+        max-width: 100%;
+      }
+
+      .description {
+        font: {
+          family: Barlow;
+          size: 18px;
+        }
+        max-width: 982px;
+        text-align: center;
+        color: #FFFFFF76;
+        margin-bottom: 0;
+      }
+    }
+
+    .section-6 {
+      padding: 0 20px;
+      padding-top: 140px;
+      .title {
+        font: {
+          family: Syne;
+          size: 29px;
+        }
+        line-height: 35px;
+        margin-bottom: 13px;
+        text-align: center;
+        color: #FFF;
+      }
+
+      .description {
+        font: {
+          family: Barlow;
+          size: 18px;
+        }
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF76;
+        margin-bottom: 78px
+      }
+
+      .users {
+        .title {
+          font: {
+            family: Barlow;
+            size: 22px;
+            weight: 600;
+          }
+          color: #FFF;
+          margin-bottom: 28px;
+          text-align: left;
+        }
+
+        .content {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          max-width: 1280px;
+          justify-content: center;
+          margin: 0 -14.5px;
+          max-width: 1245px;
+
+          .user {
+            width: 282px;
+            margin: 0 14.5px;
+            position: relative;
+            margin-bottom: 31px;
+
+            .gradient {
+              position: absolute;
+              width: 100%;
+              height: 50%;
+              bottom: 0;
+              left: 0;
+              background: linear-gradient(#00000000, #000000);
+            }
+
+            .name {
+              position: absolute;
+              bottom: 32px;
+              left: 39px;
+              font: {
+                family: Barlow;
+                size: 17px;
+                weight: 600
+              }
+              color: #FFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  body {
+    .body {
+      .section-1 {
+        flex-direction: column;
+        .left {
+          .title {
+            text-align: center;
+          }
+
+          .description {
+            text-align: center;
+          }
+        }
+
+        .right {
+          text-align: center;
+          width: 100%; 
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 900px) {
+  .body {
+    .section-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 53px;
+      width: 100%!important;
+      padding: 0 20px;
+
+      .title {
+        font: {
+          family: Syne;
+          size: 29px;
+        }
+        line-height: 35px;
+        color: #FFF;
+        margin-bottom: 13px;
+      }
+
+      .description {
+        font: {
+          family: Barlow;
+          size: 18px;
+        }
+        color: #FFFFFF76;
+        margin-bottom: 52.6px;
+      }
+
+      .items {
+        margin-bottom: 30px;
+        width: 100%!important;
+
+        .item {
+          width: 100%!important;
+          max-width: 798px!important;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 30px;
+          flex-direction: column;
+          align-items: center;          
+
+          .left {
+            width: 100%!important;
+            max-width: 372px!important;
+            margin-bottom: 20px;
+
+            img {
+              max-width: 100%;
+            }
+          }
+
+          .right {
+            border: 1px solid #FFFFFF16;
+            border-radius: 9px;
+            width: 100%!important;
+            max-width: 394px!important;
+
+            & > div {
+              display: flex;
+              justify-content: space-between;
+              padding: 0 25px;
+              align-items: center;
+
+              span {
+                font: {
+                  family: Barlow;
+                  size: 18px;
+                  weight: 600;
+                }
+                color: #FFFFFF60;
+              }
+
+            }
+            .header { 
+              position: relative!important;
+              height: 66.5px;
+              z-index: 300;
+              border-bottom: 1px solid #393C71;
+              span:last-child {
+                color: #FFF;
+              }
+            }
+
+            .body {
+              height: 66.5px;
+              span:last-child {
+                color: #2B8CFF;
+              }
+            }
+          }
+        }
+      }
+
+      .total {
+        p {
+          text-align: center;
+        }
+
+        .title {
+          font: {
+            family: Barlow;
+            size: 21px;
+            weight: 600;
+          }
+          line-height: 21px;
+        }
+
+        .point {
+          font: {
+            family: Barlow;
+            size: 40px;
+            weight: 600;
+          }
+          line-height: 40px;
+          color: #2B8CFF;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,178 @@
+@import './layout.scss';
+
+body {
+  background: #040404;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    background: #040404;
+  }
+  
+  .body {
+    display: flex;
+    max-width: 1480px;
+    width: 100%;
+    margin-top: 275.8px;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 20px;
+    
+    .logo {
+      margin-bottom: 55.8px;
+    }
+    
+    .content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .left {
+        max-width: 858px;
+        width: 100%;
+
+        .blogs {
+          .blog {
+            padding: 40px 40px 36px;
+            margin-bottom: 49px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-radius: 10px;
+            border: 1px solid #253B92;
+
+            .bg {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              z-index: 1;
+              border-radius: 10px;
+            }
+
+            .content {
+              position: relative;
+              z-index: 100;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+
+              .title {
+                font: {
+                  family: Syne;
+                  size: 22px;
+                }
+                line-height: 30px;
+                color: #FFF;
+                margin-bottom: 36px;
+              }
+
+              img {
+                margin-bottom: 31px;
+                width: 100%;
+              }
+
+              .date {
+                font: {
+                  family: Barlow;
+                  size: 16px;
+                  weight: 700;
+                }
+                color: #FFF;
+                margin-bottom: 20px;
+              }
+
+              .description {
+                font: {
+                  family: Barlow;
+                  size: 16px;
+                }
+                line-height: 25px;
+                color: #FFFFFF76;
+                margin-bottom: 24px;
+              }
+
+              a {
+                align-self: flex-end;
+                width: 140px;
+                height: 44px;
+                background: #0884FF;
+                color: #FFF;
+                border-radius: 4px;
+                border: none;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font: {
+                  family: Barlow;
+                  size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        max-width: 566px;
+        width: 100%;
+
+        .categories {
+          background: #FFFFFF04;
+          border-radius: 10px;
+          padding: 40px 46px 16px 60px;
+          position: sticky;
+          top: 372px;
+
+          .title {
+            font: {
+              family: Syne;
+              size: 22px;
+            }
+            color: #FFF;
+            margin-bottom: 48px;
+          }
+
+          .group {
+            padding-left: 24px;
+
+            .item {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 40px;
+
+              span {
+                font: {
+                  family: Barlow;
+                  size: 16px;
+                }
+                color: #FFFFFF76;
+              }
+
+              .name {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1366px) {
+  .body {
+    flex-direction: column;
+    align-items: center!important;
+
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
